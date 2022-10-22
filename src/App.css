@@ -1,38 +1,56 @@
-.App {
-  text-align: center;
+@import-normalize;
+body {
+  background-color: #4e6a6a;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+img {
+  width: 400px;
+  animation: blur .6s alternate infinite;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@keyframes blur {
+  0% {
+    filter: blur(30px)
+  }
+  100% {
+    filter: blur(0px)
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+span {
+  font-size: 128px;
+  color: rgb(255, 251, 10);
+  font-weight: 700;
+  display: inline-block;
+  animation: wave-text 1s ease-in-out infinite;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+span:nth-of-type(1){ animation-delay: 0.0s; }
+span:nth-of-type(2){ animation-delay: 0.1s; }
+span:nth-of-type(3){ animation-delay: 0.2s; }
+span:nth-of-type(4){ animation-delay: 0.3s; }
+span:nth-of-type(5){ animation-delay: 0.4s; }
+span:nth-of-type(6){ animation-delay: 0.5s; }
+span:nth-of-type(7){ animation-delay: 0.6s; }
+span:nth-of-type(8){ animation-delay: 0.7s; }
+span:nth-of-type(9){ animation-delay: 0.8s; }
+span:nth-of-type(10){ animation-delay: 0.0s; }
+span:nth-of-type(11){ animation-delay: 0.1s; }
+span:nth-of-type(12){ animation-delay: 0.2s; }
+span:nth-of-type(13){ animation-delay: 0.3s; }
+span:nth-of-type(14){ animation-delay: 0.4s; }
+span:nth-of-type(15){ animation-delay: 0.5s; }
+span:nth-of-type(16){ animation-delay: 0.6s; }
+span:nth-of-type(17){ animation-delay: 0.7s; }
+span:nth-of-type(18){ animation-delay: 0.8s; }
+
+@keyframes wave-text{
+  00%{
+    transform: translateY(0em);
   }
-  to {
-    transform: rotate(360deg);
+  60%{
+    transform: translateY(-0.6em);
+  }
+  100%{
+    transform: translateY(0em);
   }
 }
