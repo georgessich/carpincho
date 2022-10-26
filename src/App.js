@@ -7,11 +7,11 @@ import capycoin from "./images/capycoin.png";
 import beaver2 from "./images/beav2.jpg";
 import { Reorder } from "framer-motion";
 import "./App.css";
-
+import Grid from "./components/Grid";
 function App() {
   return (
     <div className="App">
-      <Parallax pages={2}>
+      <Parallax pages={3}>
         <ParallaxLayer
           speed={0.5}
           factor={1.5}
@@ -37,12 +37,10 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer
           speed={0.5}
-          factor={1.5}
+          factor={0.5}
           offset={1}
           style={{
-            // backgroundImage: `url(${beaver})`,
-            // backgroundSize: "cover",
-            // backgroundPosition: "center center",
+          
             backgroundColor: "rgb(100 90 141)",
           }}
         >
@@ -53,9 +51,20 @@ function App() {
           Carpincho - это валюта со стабильной ценой на базе CapyChain™®, выпуском и развитием которого управляют Melon Protocol и децентрализованая автономная организация Carpincho LLC.
           </span>
           </div>
+          <Grid />
+        </ParallaxLayer>
+        <ParallaxLayer
+          speed={1}
+          factor={0.5}
+          offset={2}
+          style={{
+          
+            backgroundColor: "rgb(100 90 141)",
+          }}
+        >
           
         </ParallaxLayer>
-       
+        
 
       </Parallax>
     </div>

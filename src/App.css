@@ -3,6 +3,7 @@
 body {
     font-weight: 700;
     font-family: 'IBM Plex Mono', monospace;
+    background-color:rgb(100 90 141);
 }
 .title {
     font-size: 65px;
