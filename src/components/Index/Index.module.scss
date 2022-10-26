@@ -1,0 +1,17 @@
+.index {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    &__img {
+        width: 600px;
+        
+    }
+
+    &__text {
+        font-size: 48px;
+        color: #fff;
+        text-align: center;
+        max-width: 600px;
+    }
+}

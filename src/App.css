@@ -6,12 +6,13 @@ body {
     background-color:rgb(100 90 141);
 }
 .title {
-    font-size: 65px;
+    margin-top: 50px;
+    font-size: 128px;
     color: rgb(100 90 141);
     text-align: center;
   
-    filter: blur(-17px);
-    filter: drop-shadow(5px 5px 1px white);
+    filter: blur(0px);
+    /* filter: drop-shadow(5px 5px 1px white); */
 }
 
 .subtitle {

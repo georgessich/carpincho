@@ -1,11 +1,11 @@
 import React from "react";
 import classes from "./Grid.module.scss";
-import capy1 from "../images/capy1.png";
-import capy2 from "../images/capy2.png";
-import capy3 from "../images/capy3.png";
+import capy1 from "../../images/capy1.png";
+import capy2 from "../../images/capy2.png";
+import capy3 from "../../images/capy3.png";
 const cards = [
   { title: "Безопасно", text: "Быстрая, надёжная и эффективная обработка транзакций", img: capy1 },
-  { title: "Надёжно", text: "Уникальная технология многофакторной аутентификации, ", img: capy2 },
+  { title: "Надёжно", text: "Уникальная технология многофакторной аутентификации", img: capy2 },
   { title: "Технологично", text: "Carpincho — это CapyChain™® сеть, распределенная, с открытым исходным кодом и принадлежащая сообществу.", img: capy3 },
 ];
 
