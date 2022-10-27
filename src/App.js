@@ -57,7 +57,7 @@ function App() {
           
         </ParallaxLayer>
         <ParallaxLayer
-          speed={1}
+          speed={0.5}
           factor={0.5}
           offset={2}
           style={{

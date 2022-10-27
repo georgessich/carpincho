@@ -10,25 +10,32 @@ ul li {
 }
 .title {
     margin-top: 50px;
-    font-size: 128px;
+    margin-bottom: 0;
+    font-size: 214px;
     color: rgb(100 90 141);
     text-align: center;
   
     filter: blur(0px);
+    
     /* filter: drop-shadow(5px 5px 1px white); */
 }
 
+
 .subtitle {
-    font-size: 72px;
+    font-size: 121px;
     color: #fff;
     font-weight: 700;
     display: flex;
-    justify-content: center;
+
     margin: 0 auto;
-    text-align: center;
+
     align-content: start;
-    width: 60%;
+  
+    
+    
 }
+
+
 
 .capy__container {
     display: flex;

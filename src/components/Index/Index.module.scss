@@ -7,11 +7,33 @@
         width: 600px;
         
     }
+    &__container {
+        max-width: 600px;
+        display: flex;
+        flex-direction: column;
+        align-self: end;
+        &-arrow {
+            width: 50px;
+            height: 50px;
+            fill:#3cff01;
+            transform: rotate(45deg);
+            animation: arrowUp 3s linear infinite;
+        }
+    }
 
     &__text {
         font-size: 48px;
         color: #fff;
-        text-align: center;
+        
         max-width: 600px;
+        align-self: end;
+    }
+}
+@keyframes arrowUp {
+    0% {
+        transform:translate(0, 0) rotate(45deg);
+    }
+    100% {
+        transform: translate(300px, -200px) rotate(45deg);
     }
 }
