@@ -5,6 +5,9 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     background-color:rgb(100 90 141);
 }
+ul li {
+    list-style: none;
+}
 .title {
     margin-top: 50px;
     font-size: 128px;
@@ -58,3 +61,12 @@ body {
         transform:rotate(360deg);
     }
 }
+.progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background:red;
+    transform-origin: 0%;
+  }
