@@ -10,10 +10,11 @@ import "./App.css";
 import Grid from "./components/Grid/Grid";
 import Index from "./components/Index/Index";
 import Team from "./components/Team/Team";
+import Partners from "./components/Partners/Partners";
 function App() {
   return (
     <div className="App">
-      <Parallax pages={5}>
+      <Parallax pages={6}>
         <ParallaxLayer
           speed={0.5}
           factor={1.5}
@@ -67,7 +68,7 @@ function App() {
           <Grid />
         </ParallaxLayer>
         <ParallaxLayer
-          speed={1}
+          speed={0.5}
           factor={0.5}
           offset={3}
           style={{
@@ -78,7 +79,7 @@ function App() {
           <Index />
         </ParallaxLayer>
         <ParallaxLayer
-          speed={1}
+          speed={0.5}
           factor={0.5}
           offset={4}
           style={{
@@ -87,6 +88,17 @@ function App() {
           }}
         >
           <Team />
+        </ParallaxLayer>
+        <ParallaxLayer
+          speed={0.5}
+          factor={0.5}
+          offset={5}
+          style={{
+          
+            backgroundColor: "rgb(100 90 141)",
+          }}
+        >
+          <Partners />
         </ParallaxLayer>
 
       </Parallax>

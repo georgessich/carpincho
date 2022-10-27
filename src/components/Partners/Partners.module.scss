@@ -1,0 +1,31 @@
+.partners {
+    
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 48px;
+        color: #fff;
+    }
+
+    &__items {
+        padding-top: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, min-content);
+        justify-content: center;
+        align-items: center;
+        gap:50px;
+    }
+
+    &__container {
+
+
+        &-img {
+            width: 300px;
+        }
+    }
+
+    
+}
