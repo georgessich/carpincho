@@ -26,13 +26,18 @@ ul li {
     color: #fff;
     font-weight: 700;
     display: flex;
-
     margin: 0 auto;
-
-    align-content: start;
-  
+   
+    animation: text 4s ease-in-out infinite;
     
-    
+}
+@keyframes text {
+    0% {
+        filter: drop-shadow(2px 4px 12px rgba(255,231,0,1));
+    }
+    100% {
+        filter: drop-shadow(2px 2px 2px transparent)
+    }
 }
 
 
