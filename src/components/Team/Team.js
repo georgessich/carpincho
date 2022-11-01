@@ -31,8 +31,8 @@ export default function Team() {
     <div className={classes['team']}>
       <span className={classes['team__title']}>Познакомьтесь с нашей командой</span>
       <ul className={classes['team__list']}>
-        {teamMembers.map((member) => (
-          <li className={classes['team__container']}>
+        {teamMembers.map((member, i) => (
+          <li key={i} className={classes['team__container']}>
             <img className={classes['team__container-image']} src={member.image} alt={member.position} />
             <span className={classes['team__container-name']}>{member.name}</span>
             <span className={classes['team__container-position']}>{member.position}</span>

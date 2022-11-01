@@ -26,8 +26,8 @@ export default function Partners() {
             Наши партнёры и инвесторы
         </span>
         <ul className={classes['partners__items']}>
-            {partners.map((partner) => (
-                <li className={classes['partners__container']}>
+            {partners.map((partner, i) => (
+                <li key={i} className={classes['partners__container']}>
                     <img className={classes['partners__container-img']} src={partner.img} alt="partner"/>
                 </li>
             ))}

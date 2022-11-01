@@ -10,8 +10,8 @@ const cards = [
 ];
 
 export default function Grid() {
-  return <ul className={classes['grid']}>{cards.map((item) => (
-    <div className={classes["grid__container"]}>
+  return <ul className={classes['grid']}>{cards.map((item, i) => (
+    <div key={i} className={classes["grid__container"]}>
         <img className={classes["grid__container-img"]} src={item.img} alt="capy"/>
         <span className={classes["grid__container-title"]}>{item.title}</span>
         <span className={classes["grid__container-text"]}>
