@@ -12,6 +12,11 @@
         border: 1px solid #ffffff;
         height: 500px;
         padding: 20px;
+        transition: background-color .5s ease-out;
+
+        &:hover {
+            background-color: #00A284;
+        }
         &-title {
             font-size: 34px;
             color: #fff;

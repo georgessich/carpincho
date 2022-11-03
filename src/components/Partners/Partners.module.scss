@@ -1,13 +1,9 @@
+@import '../../mixins/mixins.module.scss';
 .partners {
     
-
+    background-image: url(../../images/capy.svg);
     &__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 48px;
-        color: #fff;
+    @include section-title;
     }
 
     &__items {

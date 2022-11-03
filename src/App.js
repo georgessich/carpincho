@@ -1,16 +1,15 @@
 import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import capy from "./images/capy.jpg";
-import beaver from "./images/beav.jpg";
-import cat from "./images/cat.png";
-import otter from "./images/otter.jpg";
+
 import capycoin from "./images/capycoin.png";
-import beaver2 from "./images/beav2.jpg";
+import capylogo from './images/capy4.png'
 import { Reorder } from "framer-motion";
 import "./App.css";
 import Grid from "./components/Grid/Grid";
 import Index from "./components/Index/Index";
 import Team from "./components/Team/Team";
 import Partners from "./components/Partners/Partners";
+import DownloadApp from "./components/DownloadApp/DownloadApp";
 import { useState, useEffect, useRef } from "react";
 function App() {
   const parallax = useRef();
@@ -36,10 +35,10 @@ function App() {
   return (
     <div className="App">
       <div
-        style={{ transform: `rotate(${scrollDeg / 4}deg)` }}
+       
         className="App-round"
       >
-        <svg viewBox="0 0 100 100" width="90" height="90">
+        <svg viewBox="0 0 100 100" width="90" height="90"  style={{ transform: `rotate(${scrollDeg / 4}deg)` }}>
           <defs>
             <path
               id="circle"
@@ -56,24 +55,22 @@ function App() {
             </textPath>
           </text>
         </svg>
+        <img className="App-capy" src={capylogo} alt="capylogo" />
       </div>
-      <Parallax className="my-class-name" pages={6} ref={parallax}>
+      <Parallax className="my-class-name" pages={7} ref={parallax}>
         <ParallaxLayer
-          speed={0.5}
+          speed={1}
           factor={1.5}
           offset={0}
-          style={{
-            backgroundImage: `url(${capy})`,
-            backgroundSize: "cover",
-            backgroundPosition: "center center",
-          }}
+      
         >
+          <section className="hero">
           <p className="title">CARPINCHO COIN</p>
           <p className="subtitle">
             Гиперсовременная децентрализированная валюта основанная на
             уникальной технологии CapyChain™®
           </p>
-
+          </section>
           {/* <Reorder.Group axis="y" onReorder={setInitItems} values={initItems}>
             {initItems.map(({ title, text, i }) => (
               <Accordion key={i} title={title} text={text} />
@@ -141,6 +138,16 @@ function App() {
           }}
         >
           <Partners />
+        </ParallaxLayer>
+        <ParallaxLayer
+          speed={1}
+          factor={1}
+          offset={6}
+          style={{
+            backgroundColor: "rgb(100 90 141)",
+          }}
+        >
+          <DownloadApp />
         </ParallaxLayer>
       </Parallax>
     </div>

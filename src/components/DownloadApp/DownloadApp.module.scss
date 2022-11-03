@@ -1,0 +1,26 @@
+@import '../../mixins/mixins.module.scss';
+
+.downloadApp {
+    display: flex;
+    justify-content: center;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &-info {
+            width: 800px;
+            align-self: center;
+            padding: 20px;
+        }
+        &-title {
+            @include section-title;
+            
+        }
+        &-text {
+            @include section-title;
+            font-size: 32px;
+            padding-top: 30px;
+        }
+    }
+}

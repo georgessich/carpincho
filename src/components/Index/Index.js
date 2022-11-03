@@ -11,13 +11,14 @@ export default function Index() {
       <img className={classes["index__img"]} src={indexpic} alt="index" />
       <div className={classes["index__container"]}>
         <div>
-         
-          <Arrow3 className={classes['index__container-arrow']}/>
+          <Arrow3 className={classes["index__container-arrow"]} />
         </div>
-        <span className={classes["index__text"]}>
-          Во времена всеобщей экономической турбулентности Carpincho остаётся
-          самым надёжным валютным вложением.
-        </span>
+        <a>
+          <span className={classes["index__text"]}>
+            Во времена всеобщей экономической турбулентности Carpincho остаётся
+            самым надёжным валютным вложением.
+          </span>
+        </a>
       </div>
     </div>
   );

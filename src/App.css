@@ -7,6 +7,7 @@ body {
 }
 ul li {
     list-style: none;
+    padding: 0;
 }
 .App-round {
     position: fixed;
@@ -26,14 +27,26 @@ ul li {
     padding: 5px;
     z-index: 100;
 }
+
+.App-capy {
+    position: absolute;
+}
+.hero {
+    height:120vh;
+      background-image: url(./images/capy.jpg);
+      background-size: cover;
+      background-position: center center;
+    
+}
 .title {
-    margin-top: 50px;
+    margin-top: 0;
     margin-bottom: 0;
     font-size: 214px;
     color: rgb(100 90 141);
     text-align: center;
   
     filter: blur(0px);
+    
     
     /* filter: drop-shadow(5px 5px 1px white); */
 }
@@ -45,8 +58,9 @@ ul li {
     font-weight: 700;
     display: flex;
     margin: 0 auto;
-   
+    text-align: center;
     animation: text 4s ease-in-out infinite;
+    
     
 }
 @keyframes text {
@@ -100,3 +114,49 @@ ul li {
     background:red;
     transform-origin: 0%;
   }
+
+@media (max-width:1480px) {
+    .subtitle {
+        font-size: 100px;
+    }
+}
+@media (max-width:1230px) {
+    .subtitle {
+        font-size: 75px;
+    }
+    .title {
+        font-size: 160px;
+    }
+}
+@media (max-width:920px) {
+    .subtitle {
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    .title {
+        font-size: 120px;
+    }
+}
+@media(max-width:650px) {
+    .title {
+        font-size: 70px;
+    }
+    .subtitle {
+        font-size: 35px;
+        padding: 30px;
+        text-align: center;
+    }
+}
+@media (max-width:480px) {
+    .subtitle {
+        font-size: 26px;
+    }
+    .hero {
+     
+        background-position-y: top;
+        background-size: 300%;
+        background-repeat: no-repeat;
+        height: 100vh;
+    }
+}
+

@@ -1,40 +1,43 @@
+@import '../../mixins/mixins.module.scss';
 .team {
+  &__title {
+   @include section-title;
+  }
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    padding-top: 40px;
+  }
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.5s ease-in;
+    padding: 26px;
+    border-radius: 16px;
+    background-color: #461a45;
+    &:hover {
+      transform: translateY(-5px);
+      filter: drop-shadow(2px 2px 2px blackтз);
+    }
+    &-image {
+      width: 250px;
+      height: 300px;
+    }
+    &-name {
+      padding-top: 15px;
+      font-size: 28px;
+      color: #fff;
+    }
+    &-position {
+      padding-top: 20px;
 
-    &__title {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        font-size: 48px;
-        color: #fff;
+      font-size: 24px;
+      color: #fff;
     }
-    &__list {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 60px;
-        padding-top: 40px;
-    }
-    &__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        &-image {
-            width: 250px;
-            height: 300px;
-        }
-        &-name {
-            padding-top: 15px;
-            font-size: 28px;
-            color: #fff;
-        }
-        &-position {
-            padding-top: 20px;
-           
-            font-size: 24px;
-            color: #fff;
-        }
-    }
+  }
 }
