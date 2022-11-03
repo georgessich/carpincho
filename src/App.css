@@ -5,6 +5,10 @@ body {
     font-family: 'IBM Plex Mono', monospace;
     background-color:rgb(100 90 141);
 }
+ul {
+    padding: 0;
+}
+
 ul li {
     list-style: none;
     padding: 0;
@@ -27,7 +31,10 @@ ul li {
     padding: 5px;
     z-index: 100;
 }
-
+.App-round__text {
+    will-change: transform;
+    transition: transform 1s ease-out;
+}
 .App-capy {
     position: absolute;
 }
@@ -119,6 +126,17 @@ ul li {
     .subtitle {
         font-size: 100px;
     }
+    .capy__container {
+        padding: 100px;
+    }
+}
+@media (max-width:1380px) {
+    .capy__container-coin{
+        width: 350px;
+    }
+    .capy__container-text {
+        font-size: 36px;
+    }
 }
 @media (max-width:1230px) {
     .subtitle {
@@ -126,6 +144,14 @@ ul li {
     }
     .title {
         font-size: 160px;
+    }
+}
+@media (max-width:1100px) {
+    .capy__container {
+        flex-direction: column;
+    }
+    .capy__container-coin {
+        margin-right: 0;
     }
 }
 @media (max-width:920px) {
@@ -146,6 +172,9 @@ ul li {
         padding: 30px;
         text-align: center;
     }
+    .capy__container {
+        padding: 20px;
+    }
 }
 @media (max-width:480px) {
     .subtitle {
@@ -157,6 +186,12 @@ ul li {
         background-size: 300%;
         background-repeat: no-repeat;
         height: 100vh;
+    }
+    .capy__container-coin {
+        width: 280px;
+    }
+    .capy__container-text {
+        font-size: 26px;
     }
 }
 

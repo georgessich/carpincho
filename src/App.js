@@ -38,7 +38,7 @@ function App() {
        
         className="App-round"
       >
-        <svg viewBox="0 0 100 100" width="90" height="90"  style={{ transform: `rotate(${scrollDeg / 4}deg)` }}>
+        <svg viewBox="0 0 100 100" width="90" height="90" className="App-round__text" style={{ transform: `rotate(${scrollDeg / 4}deg)` }}>
           <defs>
             <path
               id="circle"
@@ -101,7 +101,7 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer
           speed={0.5}
-          factor={0.5}
+          factor={1}
           offset={2}
           style={{
             backgroundColor: "rgb(100 90 141)",
@@ -111,7 +111,7 @@ function App() {
         </ParallaxLayer>
         <ParallaxLayer
           speed={0.5}
-          factor={0.5}
+          factor={1}
           offset={3}
           style={{
             backgroundColor: "rgb(100 90 141)",

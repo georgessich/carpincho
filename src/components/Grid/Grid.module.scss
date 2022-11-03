@@ -3,7 +3,7 @@
     justify-content: center;
     gap:80px;
     align-items: baseline;
-    
+    flex-wrap: wrap;
     &__container {
         display: flex;
         flex-direction: column;
@@ -13,24 +13,35 @@
         height: 500px;
         padding: 20px;
         transition: background-color .5s ease-out;
-
+        @media(max-width:880px) {
+            height: 350px;
+        }   
         &:hover {
             background-color: #00A284;
         }
         &-title {
             font-size: 34px;
             color: #fff;
+            @media(max-width:880px) {
+                font-size: 28px;
+            }   
         }
         &-text {
             padding-top: 20px;
             text-align: center;
             font-size: 24px;
             color: #fff;
+            @media(max-width:880px) {
+                font-size: 16px;
+            }   
         }
         &-img {
             width: 350px;
             filter: drop-shadow(2px 2px 10px #9cdffa);
             justify-self: baseline;
+            @media (max-width:880px) {
+                width: 200px;
+            }
         }
     }
 }
