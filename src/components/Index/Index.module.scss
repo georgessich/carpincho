@@ -3,8 +3,17 @@
   align-items: center;
   justify-content: center;
   gap: 40px;
+  @media(max-width:920px) {
+    flex-direction: column-reverse;
+  }
   &__img {
     width: 600px;
+    @media (max-width:1220px) {
+      width: 400px;
+    }
+    @media(max-width:480px) {
+      width: 290px;
+    }
   }
   &__container {
     max-width: 600px;
@@ -17,6 +26,9 @@
       fill: #3cff01;
       transform: rotate(45deg);
       animation: arrowUp 3s linear infinite;
+    }
+    @media (max-width:920px) {
+      align-self: center;
     }
   }
 
@@ -32,6 +44,12 @@
     background-repeat: no-repeat;
 
     animation: underline 7s infinite;
+    @media(max-width:1220px) {
+      font-size: 40px;
+    }
+    @media(max-width:480px) {
+      font-size: 24px;
+    }
   }
 }
 @keyframes arrowUp {
@@ -40,6 +58,9 @@
   }
   100% {
     transform: translate(300px, -200px) rotate(45deg);
+    @media(max-width:420px) {
+      transform: translate(200px, -150px) rotate(45deg);
+    }
   }
 }
 @keyframes underline {
