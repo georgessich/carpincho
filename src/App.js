@@ -100,8 +100,8 @@ function App() {
           </div>
         </ParallaxLayer>
         <ParallaxLayer
-          speed={0.5}
-          factor={1}
+          speed={2}
+          factor={2}
           offset={2}
           style={{
             backgroundColor: "rgb(100 90 141)",
@@ -110,7 +110,7 @@ function App() {
           <Grid />
         </ParallaxLayer>
         <ParallaxLayer
-          speed={0.5}
+          speed={1.5}
           factor={1}
           offset={3}
           style={{
@@ -120,8 +120,8 @@ function App() {
           <Index />
         </ParallaxLayer>
         <ParallaxLayer
-          speed={0.5}
-          factor={0.5}
+          speed={1.5}
+          factor={1}
           offset={4}
           style={{
             backgroundColor: "rgb(100 90 141)",
