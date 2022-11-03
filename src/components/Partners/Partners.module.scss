@@ -2,8 +2,14 @@
 .partners {
     
     background-image: url(../../images/capy.svg);
+    @media(max-width:1430px) {
+        background-size: 35%;
+    }
     &__title {
     @include section-title;
+    @media(max-width:1050px) {
+        font-size: 32px;
+    }
     }
 
     &__items {
@@ -13,6 +19,9 @@
         justify-content: center;
         align-items: center;
         gap:50px;
+        @media(max-width:430px) {
+            gap:30px;
+        }
     }
 
     &__container {
@@ -20,6 +29,15 @@
 
         &-img {
             width: 300px;
+            @media(max-width:1050px) {
+                width: 200px;
+            }
+            @media(max-width:730px) {
+                width: 100px;
+            }
+            @media(max-width:430px) {
+                width: 75px;
+            }
         }
     }
 

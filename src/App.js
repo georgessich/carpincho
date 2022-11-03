@@ -57,7 +57,7 @@ function App() {
         </svg>
         <img className="App-capy" src={capylogo} alt="capylogo" />
       </div>
-      <Parallax className="my-class-name" pages={7} ref={parallax}>
+      <Parallax className="my-class-name" pages={8} ref={parallax}>
         <ParallaxLayer
           speed={1}
           factor={1.5}
@@ -140,8 +140,8 @@ function App() {
           <Partners />
         </ParallaxLayer>
         <ParallaxLayer
-          speed={1}
-          factor={1}
+          speed={2}
+          factor={1.5}
           offset={6}
           style={{
             backgroundColor: "rgb(100 90 141)",

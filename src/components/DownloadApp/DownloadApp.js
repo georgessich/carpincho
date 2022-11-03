@@ -5,11 +5,7 @@ export default function DownloadApp() {
   return (
     <div className={classes["downloadApp"]}>
       <div className={classes["downloadApp__container"]}>
-        <img
-          className={classes["downloadApp__container-image"]}
-          src={app}
-          alt="app"
-        />
+       <img src={app} className={classes["downloadApp__container-img"]} />
         <div className={classes["downloadApp__container-info"]}>
           <span className={classes["downloadApp__container-title"]}>
             Управляйте своими финансами через приложение

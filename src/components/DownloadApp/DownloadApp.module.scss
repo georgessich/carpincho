@@ -3,24 +3,49 @@
 .downloadApp {
     display: flex;
     justify-content: center;
-
+    
     &__container {
         display: flex;
         align-items: center;
         justify-content: center;
+        @media(max-width:990px) {
+            flex-direction: column;
+        }
+        &-img {
+            width:400px;
+            @media(max-width:1085px) {
+                width: 350px;
+            }
+            @media(max-width:620px) {
+                width: 190px;
+                transform: rotate(330deg);
+            }
+        }
         &-info {
             width: 800px;
             align-self: center;
             padding: 20px;
+            @media(max-width:1300px) {
+                width: 600px;
+            }
+            @media(max-width:620px) {
+                width: auto;
+            }
         }
         &-title {
             @include section-title;
+            @media(max-width: 620px){
+                font-size: 32px;
+            }
             
         }
         &-text {
             @include section-title;
             font-size: 32px;
             padding-top: 30px;
+            @media(max-width: 620px){
+                font-size: 24px;
+            }
         }
     }
 }
